@@ -1,0 +1,429 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#section{
+  background-attachment: fixed;
+  position: relative;
+}
+/*navbar*/
+.navbar {
+  position: sticky;
+  z-index: 1;
+}
+.Header-logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  height: 3rem;
+  width: auto;
+  }
+li a{
+  display: block;
+  float: right;
+  color: whitesmoke;
+  padding: 2% 4% 0px 0%;
+  font-size: 1.25rem;
+  text-decoration: none;
+  border-radius: 7px;
+}
+
+a:hover:not(.logo) {
+  cursor: pointer;
+  color: #00cc00;
+  transition: 0.7s;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+  list-style-type: none;
+}
+
+.navlist a.active {
+  background-color: #333;
+  color: whitesmoke;
+  text-align: left;
+}
+.logo1 {
+  position: absolute;
+  z-index: 3;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: 
+    url(images/fowntain2\ \(3\).jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+/*burger-menu*/
+.burger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 2.5%;
+  top: 10px;
+}
+.line {
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 4px 4px;
+}
+
+/*responsive*/
+@media only screen and (max-width: 730px) {
+  .navbar {
+    transition: all 0.7s ease-in-out;
+    height: 100vh;
+    flex-direction: column;
+    background-color: rgba(4, 9, 30, 0.7);
+  }
+
+  .burger {
+    display: block;
+  }
+  li a {
+    float: none;
+
+    
+  }
+  .logo {
+    display: none;
+  }
+  .h-nav {
+    height: 1px;
+  }
+  .v-class {
+    opacity: 0;
+  }
+}
+
+/*content*/
+html {
+  scroll-behavior: smooth;
+}
+.btn {
+  display: none;
+}
+.venominfo {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.venominfo p {
+  font-size: 20px;
+  padding: 10px 0px 20px 0px;
+  z-index: -1;
+}
+.btn-class {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  padding: 12px 30px;
+  border: 1px solid #fff;
+  font-size: 20px;
+  position: relative;
+  background: transparent;
+  border-radius: 5px;
+}
+.btn-class:hover{
+  font-size: 25px;
+  color: #00cc00;
+  border-color: #00cc00;
+  transition: 0.5s;
+}
+
+
+/**courses**/
+.courses p:not(.row .column p) {
+  text-align: center;
+  font-style: italic;
+  font-size: 25px;
+  padding-top: 10px;
+}
+.courses {
+  background-color: lightgrey;
+}
+.row .column p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+
+}
+.row {
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.pi p{
+  padding: 0px 50px 0px 50px;
+}
+.courses h1 {
+  font-size: 40px;
+  text-align: center;
+  color: purple;
+  padding-top: 30px;
+}
+
+.courses h1:hover {
+  text-decoration-line: underline;
+  color: black;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.column h3 {
+  text-align: center;
+  color: white;
+  text-decoration-line: underline;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+.column h3:hover {
+  text-decoration-line: none;
+  color: black;
+  font-size: 26px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.column {
+  color: black;
+  flex-basis: 30%;
+  border-radius: 10px;
+  background: #333;
+  padding: 20px 12px;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.column:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);
+  background: black;
+  padding: 24px 15px;
+  transition: 0, 5s;
+}
+/**responsive-courses**/
+@media (max-width: 980px) {
+  .row {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .column {
+    margin: 20px 0px 20px 0px;
+    
+  }
+}
+/**container**/
+.container {
+  width: 100%;
+  height: 250px;
+}
+/**campus**/
+
+.campus h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+}
+.campus {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  height: 525px;
+  padding-top: 30px;
+  margin: auto;
+}
+
+body {
+  background-image: url(images/fowntain.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+  width: 100%;
+}
+  
+
+/** gallery**/
+div.disc {
+  padding: 15px;
+  text-align: center;
+}
+div.gallery img {
+  position: relative;
+}
+* {
+  box-sizing: border-box;
+}
+.gallery {
+  flex-direction: row;
+  justify-content: center;
+}
+.english {
+  background-color: chocolate;
+  height: 700px;
+}
+/***********corousel************/
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  padding: 10px; /* Add padding */
+}
+
+.images img {
+  width: calc((100% - 20px) / 3); /* Adjust width to accommodate padding */
+  margin-right: 10px; /* Add spacing between images */
+  flex-shrink: 0;
+}
+
+.images img:last-child {
+  margin-right: 0; /* Remove margin from last image */
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/*********************principal*********************/
+.english {
+  background-color: #f9f9f9;
+  padding: 100px 0; /* Increase padding for better spacing */
+  font-size: 20px; /* Increase font size */
+}
+
+.english h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.english ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.english li {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+  opacity: 0; /* Start with opacity 0 for animation */
+  transition: opacity 1s ease;
+}
+
+.english li.active {
+  opacity: 1; /* Show when active */
+}
+
+.english li::before {
+  content: '\2022'; /* bullet point */
+  position: absolute;
+  left: 0;
+  color: #ff416c;
+  font-size: 20px;
+}
+
+.contain {
+  text-align: center;
+}
+
+.btn-2 {
+  background-color: #ff416c;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 1.0s ease;
+}
+
+.btn-2:hover {
+  background-color: #d63031;
+}
+
+/**footer**/
+.footer {
+  background-color: black;
+}
+.footer h4 {
+  text-align: center;
+  padding-top: 10px;
+  color: #fff;
+}
+.icons {
+  color: #fff;
+  z-index: 2;
+}
+.companies {
+  padding:10px;
+  font-size: 30px;
+  margin:20px 20px 20px 20px;
+}
+.sub-links a {
+  display: block;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 10px 5px 10px ;
+  color: grey;
+  text-decoration: none;
+}
+
+.sub-links a:visited{
+  color: white;
+}
+
+
+.sub-links a:hover {
+  color: greenyellow;
+  text-decoration: underline;
+}
+
+.footer-bottom{
+  color: white;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  
+}
+footer{
+  height: 50px;
+}

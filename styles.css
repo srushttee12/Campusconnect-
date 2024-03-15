@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  #section{
+    background-attachment: fixed;
+    position: relative;
+  }
+  /*navbar*/
+  .navbar {
+    position: sticky;
+    z-index: 1;
+  }
+  .Header-logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    height: 3rem;
+    width: auto;
+    }
+  li a{
+    display: block;
+    float: right;
+    color: white;
+    padding: 2% 4% 0px 0%;
+    font-size: 1.25rem;
+    text-decoration: none;
+    border-radius: 7px;
+  }
+  
+  li:hover:not(.logo) {
+    cursor: pointer;
+    color: #00cc00;
+    transition: 0.7s;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    list-style-type: none;
+  }
+  
+  .navlist a.active {
+    background-color: #333;
+    color: #00cc00;
+    text-align: left;
+  }
+  .logo1 {
+    position: absolute;
+    z-index: 3;
+  }
+  .header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(images/fowntain2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .image-container {
+    position: relative;
+    width: calc(33.33% - 20px); /* Adjust width to fit three images in a row */
+    margin: 10px;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%; /* Make images fill the entire width of their container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1);
+  }
+  h1{
+    width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  }
